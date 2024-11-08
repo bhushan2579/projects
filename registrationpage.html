@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationPage</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #parent {
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(178, 128, 244);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+
+        #child1 {
+            height: 500px;
+            width: 700px;
+            background-color: white;
+            border-radius: 10px;
+            padding-left: 50px;
+            
+        }
+
+        #heading {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline solid rgb(52, 4, 52);
+        }
+        #hvg {
+            background-color: rgb(84, 122, 237);
+            height: 20px;
+            width: 550px;
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- parent div 1  -->
+    <div id="parent">
+        <!-- child div 1  -->
+        <div id="child1">
+            <h1 id="heading">Registration</h1> <br><br>
+            <label for="Name"><b>Full Name</b></label>
+            <input type="text" placeholder="Enter Your name " name="Name">
+            <label for="Name"><b>Username</b></label>
+            <input type="text" placeholder="Enter Your Username " name="Name"> <br> <br>
+            <label for="Email"><b>E-mail</b></label>
+            <input type="email" placeholder="Enter your email" name="" id="">
+            <label for="Phonenumber"><b>PhoneNumber</b></label>
+            <input type="tel" placeholder="Enter your number"> <br><br>
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter your password">
+            <label for="password"><b> Confirm Password</b></label>
+            <input type="password" placeholder="confirm your password"><br><br>
+            <label for="gender"><b>Gender</b></label>
+            <input type="checkbox" name="male" id="male"><br><br><br>
+            <input type="button" id="hvg" value="Register">
+        </div>
+    </div>
+</body>
+
+</html>
