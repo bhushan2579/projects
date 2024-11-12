@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project(webpage)</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar {
+            height: 60px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            color: white;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        #b {
+            font-size: 39px;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: underline solid white;
+        }
+
+        #bb {
+            height: 300px;
+            width: 100%;
+            display: flex;
+            background-color: rgb(230, 221, 221);
+            padding-top: 80px;
+        }
+
+        #hu {
+            font-size: 30px;
+        }
+
+        #pic {
+            height: 250px;
+            width: 600px;
+            margin-right: 25px;
+            display: inline;
+            border-radius: 15px;
+        }
+
+        #text {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: 25px;
+        }
+
+        #lm {
+            height: 20px;
+            width: 100px;
+            background-color: orange;
+            text-align: center; 
+            display: block;
+        }
+
+        #ss {
+           
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 45px;
+            margin-left: 55px;
+            margin-top: 20px;
+        }
+
+        #samplepic {
+            height: 100px;
+            width: 100px;
+            background-color: chartreuse;
+            flex: wrap;
+            display: flex;
+            
+        }
+
+        #img3 {
+            margin-top: 40px;
+            text-align: justify;
+        }
+
+        #black {
+            height: 300px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 35px;
+        }
+
+
+        #t {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 25px;
+        }
+
+        #ht {
+            font-size: 35px;
+        }
+        #Heading {
+                 display: block;
+        }
+        #About {
+            font-size: 35px;
+        }
+
+        #para {
+            text-align: justify;
+            font-family: 'Arial Narrow Bold', sans-serif;
+        }
+
+        #date {
+            height: 50px;
+        }
+
+        #lp {
+            font-size: 35px;
+        }
+
+        #per {
+            text-align: center;
+        }
+       @media screen and (max-width:1000px)
+      
+       {
+        .body {
+            flex-direction: column;
+           
+        }
+        #bb {
+            flex-direction: column;
+            display: none;
+        }
+        #ss {
+            flex-direction: column;
+        }
+        #black {
+            flex-direction: column;
+            height: 600px;
+        }
+       }
+       #img {
+        border-radius: 15px;
+       } 
+    </style>
+</head>
+
+<body class="body">
+    <div class="navbar">
+        <b id="b">Bloom</b>
+        <p>Home</p>
+        <p>About Us</p>
+        <p>Services</p>
+        <p>Portfolio</p>
+        <p>Contact Us</p>
+    </div>
+    <div id="bb">
+        <div id="text">
+            <b id="hu">Lorem ipsum dolor sit amet.</b>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sequi nesciunt ratione asperiores dolore expedita rerum ab, molestiae cum eveniet natus.
+                Vel facilis quibusdam quia quis illum quisquam! Dignissimos assumenda cum,
+                sed cupiditate ratione distinctio minus animi nostrum perferendis dolores!</p> <br>
+            <input id="lm" type="button" value="Learn More">
+        </div>
+        <div> <img id="pic" src="beautiful-girl-with-autumn-leaves-photo.jpg" alt=""></div>
+    </div>
+    <h2>This Is A Heading</h2>
+    <div id="ss">
+        <div>
+            <img id="img" src="beautiful-girl-with-autumn-leaves-photo.jpg" alt="d">  <br>
+            <b>Lorem ipsum dolor sit amet.</b> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi eveniet enim sunt.</p> <br>
+            <input id="lm" type="button" value="Learn More">
+        </div>
+        <div>
+            <img  id="img" src="beautiful-girl-with-autumn-leaves-photo.jpg" alt="d"> <br>
+            <b>Lorem ipsum dolor sit amet.</b> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi eveniet enim sunt.</p> <br>
+            <input id="lm" type="button" value="Learn More">
+        </div>
+        <div>
+            <img  id="img" src="beautiful-girl-with-autumn-leaves-photo.jpg" alt="d"> <br>
+            <b>Lorem ipsum dolor sit amet.</b> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi eveniet enim sunt.</p> <br>
+            <input id="lm" type="button" value="Learn More">
+        </div>
+    </div>
+    <div id="black">
+        <div id="first">
+            <h2 id="lp">Latest Posts</h2> <br><br>
+            <img id="date" src="calendar-date-26-icon.jpg" alt="day26">
+            <b>Lorem ipsum dolor sit.</b> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> <br>
+            <img id="date" src="calendar-date-27-icon.jpg" alt="day27">
+            <b>Lorem ipsum dolor sit.</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> <br>
+            <img id="date" src="calendar-date-28-icon.jpg" alt="day28">
+            <b>Lorem ipsum dolor sit.</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div id="second">
+            <b id="About">About</b> <br>
+            <pre id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+Sapiente cumque nulla iusto tempore, error aliquid neque placeat,
+ repudiandae officia nihil voluptatum molestias ipsum numquam,
+ quod accusantium? Ea veniam eaque eligendi architecto, aliquid magnam illo iusto!</pre>
+        </div>
+        <div id="third">
+            <b id="ht">Stay Connected</b> <br><br>
+            <img id="img" src="facebooklogo.jpg" alt="Facebook">
+            <b id="t">Facebook</b> <br>
+            <img id="img" src="twitterlogo.jpg" alt="Twitter">
+            <b id="t">Twitter</b> <br>
+            <img id="img" src="instagramlogo.jpg" alt="Instagram">
+            <b id="t">Instagram</b> <br>
+            <img id="img" src="googlelogo.jpg" alt="Google">
+            <b id="t">Google</b> <br>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!-- <div id="ss">
+    <h2 id="Heading">This Is A Heading</h2> <br><br>
+    <div id="img3">
+        <img id="samplepic" src="beautiful-girl-with-autumn-leaves-photo.jpg" alt="sample_image"> <br>
+        <b>Lorem ipsum, dolor sit amet consectetur adipisicing.</b>
+        <pre id="per">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Qui, inventore quam. Unde magni perferendis molestias dolores adipisci culpa?
+Veniam eum at expedita quae itaque repudiandae fugit vel.
+Fugiat ad nihil ex excepturi voluptatum magni nemo autem ea iste molestiae.</pre> <br>
+        <input id="lm" type="button" value="Learn More">
+    </div>
+    <div id="img3">
+        <img id="samplepic" src="beautiful-girl-with-autumn-leaves-photo.jpg" alt="sample_image"> <br>
+        <b>Lorem ipsum, dolor sit amet consectetur adipisicing.</b>
+        <pre id="per">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Qui, inventore quam. Unde magni perferendis molestias dolores adipisci culpa?
+Veniam eum at expedita quae itaque repudiandae fugit vel.
+Fugiat ad nihil ex excepturi voluptatum magni nemo autem ea iste molestiae.</pre> <br>
+        <input id="lm" type="button" value="Learn More">
+    </div>
+    <div id="img3">
+        <img id="samplepic" src="beautiful-girl-with-autumn-leaves-photo.jpg" alt="sample_image"> <br>
+        <b>Lorem ipsum, dolor sit amet consectetur adipisicing.</b> <br>
+        <pre id="per">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Qui, inventore quam. Unde magni perferendis molestias dolores adipisci culpa?
+Veniam eum at expedita quae itaque repudiandae fugit vel.
+Fugiat ad nihil ex excepturi voluptatum magni nemo autem ea iste molestiae.</pre> <br>
+        <input id="lm" type="button" value="Learn More">
+    </div>
+</div> -->
