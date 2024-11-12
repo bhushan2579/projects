@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #parent {
+         height: 100vh;
+         width: 100%;
+         background-color: rgb(106, 163, 248);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+        #child {
+            height: 240px;
+            width: 350px;
+            background-color: white;
+            padding-left: 100px;
+            padding-top: 5px;
+            box-shadow: 3px 5px 3px rgb(89, 117, 241);
+        }
+        #uname {
+        font-size:larger;
+        font-family:  Helvetica, sans-serif;
+        }
+        #pass {
+         font-size: larger;
+         font-family: Helvetica, sans-serif;
+        }
+        #button {
+            color: white;
+            background-color: rgb(65, 193, 253);
+            height: 35px;
+            width: 205px;
+        }
+        #heading {
+            color: rgb(136, 185, 228);
+        }
+        #submit {
+            height: 20px;
+            width: 200px;
+            background-color: rgb(230, 121, 172);
+        }
+    </style>
+</head>
+<body>
+    <!-- parent div 1  -->
+    <div id="parent">
+        <!-- child div 1  -->
+         <div id="child"><h1 id="heading">LogIn</h1> <br>
+            <label for="name"><h2>Username:</h2></label>
+            <input id="uname" type="text" placeholder="Username" name="" id=""> <br> <br>
+            <label for=""><h2>Password:</h2></label>
+            <input id="pass" type="password" placeholder="Enter your password"> <br><br>
+            <input type="submit" id="submit" value="LogIn">
+         </div>
+    </div>
+</body>
+</html>

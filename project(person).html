@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person_project</title>
+    <style>
+        * {
+         margin: 0;
+         padding: 0;
+        }
+        .parent {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(to right, rgb(245, 28, 93),rgb(255, 113, 201),rgb(29, 174, 241));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #child1 {
+            height: 800px;
+            width: 30%;
+            background-color: rgb(0, 0, 0);
+            margin-right: 25px;
+            margin-left: 10px;
+            border-radius: 25px;
+        }
+        #child2 {
+            height: 800px;
+            width: 70%;
+            color: white;
+            background-color: rgb(0, 0, 0);
+            margin-left: 25px;
+            margin-right: 10px;
+            text-align: center;
+            font-size: 35px;
+            border-radius: 25px;
+        }
+        @media (max-width: 1000px)  {
+            .parent {
+               flex-direction: column;
+               align-items:center;   
+               width: 100%;
+               height: 100vh;
+            } 
+            #ppic {
+                width: 30%;
+            }
+            #child1 {
+                width: 30%;
+            }
+            #child2 {
+                width: 70%;
+            }
+        }
+        {
+        }
+        #Jhon {
+           text-align: center;
+           font-size: 55px;
+           color: violet;
+           text-decoration: underline 8px darkmagenta;
+        }
+        #Web {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            margin-top: 35px;
+        }
+        #pd {
+            font-size: 60px;
+            color: aqua;
+            margin-bottom: 25px;
+            margin-top: 35px;
+        }
+        #ppic {
+            height: 500px;
+            border-radius: 25px;
+            margin: 50px 60px;
+            box-shadow: rgb(255, 79, 226) 15px 10px 30px;
+            display: flex;
+            
+        }
+        #s {
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            display: flex;
+        }
+        #c {
+            font-size: 40px;
+            font-family: 'Courier New', Courier, monospace;
+            justify-content: center;
+            display: flex;
+        } 
+    </style>
+</head>
+<body> 
+    <!-- parent div  -->
+    <div class="parent">
+        <!-- child div 1  -->
+         <div id="child1">
+            <img id="ppic" src="profile.jpg" alt="profile pic">
+            <h1 id="Jhon">Jhon Doe</h1>
+            <h2 id="Web">Web Developer</h2>
+         </div>
+        <!-- child div 2  -->
+         <div id="child2">
+          <h2 id="pd">Profile Deatils</h2>
+          <b id="s">Name:</b> <h3 id="c">Jhon Doe</h3>
+          <b id="s">Age:</b> <h3 id="c">27</h3>
+          <b id="s">Mobile:</b> <h3 id="c">99877xxxxx</h3>
+          <b id="s">E-mail:</b> <h3 id="c">jhondoe123@gmail.com</h3>
+          <b id="s">Address:</b> <h3 id="c">123 Santoshi Ma Society,Owale,Thane (West)-400615,Maharashtra.</h3>
+         </div>
+    </div>
+</body>
+</html>
