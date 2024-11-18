@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform(window)</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(105, 103, 100);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .box{
+            height: 300px;
+            width: 450px;
+            background-color: rgb(255,255,255);
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+        .box img {
+            height: 100%;
+            width: 100%;
+        }
+        .box img:hover{
+            transition: 1s;
+            /* transition-timing-function: steps(1); */
+            transform: scale(1.2);
+        }
+        .child1 {
+            height: 300px;
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            /* justify-content: flex-start; */
+            transition: 1s;
+        }
+        .box:hover .child1 {
+            transform: perspective(300px) rotateY(45deg);
+        }
+        .child2{
+            height: 300px;
+            width: 100px;
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            right: 0;
+            justify-content: flex-end;
+            transition: 1s;
+        }
+        .box:hover .child2{
+            transform: perspective(300px) rotateY(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="yamato.img.jpeg" alt="image">
+        <div class="child1"></div>
+        <div class="child2"></div>
+    </div>
+</body>
+</html>
